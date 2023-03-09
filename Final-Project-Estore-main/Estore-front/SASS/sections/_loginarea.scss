@@ -1,0 +1,100 @@
+.login-area {
+    padding: 200px 0px;
+    .login-area-text {
+        background-image: linear-gradient( 90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
+        background-size: 200% auto;
+        padding: 80px 70px;
+        height: 600px;
+        display: table;
+        .login-area-text-div {
+            display: table-cell;
+            vertical-align: middle;
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 35px;
+                color: #fff;
+                margin-bottom: 17px;
+            }
+            p {
+                color: #fff;
+                line-height: 25px
+            }
+            .login-area-btn {
+                border: 1px solid #fff;
+                background-color: transparent;
+                font-size: 14px;
+                margin-top: 28px;
+                color: #fff !important;
+                transition: 0.5s;
+                text-transform: uppercase;
+                font-weight: 400;
+                display: inline-block;
+                padding: 18px 36px;
+                border-radius: 5px;
+                &:hover {
+                    background-color: #fff;
+                    color: blue !important;
+                }
+            }
+        }
+    }
+    .login-area-login {
+        padding: 80px 70px;
+        height: 600px;
+        display: table;
+        .login-area-items-div {
+            display: table-cell;
+            vertical-align: middle;
+            h3 {
+                font-size: 26px;
+                line-height: 36px;
+                font-weight: 700;
+                margin-bottom: 80px;
+                font-family: $play-fair;
+                color: #0b1c39;
+                margin-top: 0px;
+                font-style: normal;
+            }
+            .userlogin-form {
+                .form-group {
+                    margin-bottom: 1rem;
+                }
+                .userlogin {
+                    display: inline-block;
+                    position: relative;
+                    input {
+                        border: 1px solid #eeeeee;
+                        height: 40px;
+                        border-radius: 3px;
+                        font-size: 14px;
+                        font-family: $play-fair;
+                        color: #828bb2;
+                        font-weight: normal;
+                        position: relative;
+                    }
+                }
+                .create-account {
+                    display: inline-block;
+                    margin-top: 11px;
+                    input {
+                        &::selection {
+                            color: blue;
+                        }
+                        padding: 0;
+                    }
+                    label {
+                        color: #777777;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                        font-weight: 500 !important;
+                    }
+                }
+                input:focus+.user-star {
+                    display: none;
+                }
+            }
+        }
+    }
+}

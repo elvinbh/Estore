@@ -1,0 +1,77 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="row">
+    <div class="col-6">
+        <div class="card" style="width: 18rem;">
+            <h1> Image</h1>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <img style="max-width:100%" src="~/images/@Model.Productimages.FirstOrDefault().Img" alt="Alternate Text" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    @if (Model.Productimages != null)
+    {
+        @foreach (Productimages productImage in Model.Productimages)
+        {
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <img style="max-width:100%" src="~/image/@productImage.Img" alt="Alternate Text" />
+                        </li>
+                    </ul>
+                    <a class="btn btn-danger" asp-action="DeleteProductImage" asp-route-Id="@productImage.Id">Delete</a>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+
+
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name">
+        <span class="alert-danger" asp-validation-for="Name"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ProductImagesFile"></label>
+        <input class="form-control" accept="image/*" asp-for="ProductImagesFile">
+        <span class="alert-danger" asp-validation-for="ProductImagesFile"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price"></label>
+        <input class="form-control" asp-for="Price">
+        <span class="alert-danger" asp-validation-for="Price"></span>
+    </div>
+>
+    <div class="mb-3">
+        <label asp-for="Description"></label>
+        <input class="form-control" asp-for="Description">
+        <span class="alert-danger" asp-validation-for="Description"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Category</label>
+        <select class="form-control" asp-for="ProductCategoryId">
+            @foreach (ProductCategory category in ViewBag.Categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+        <span class="alert-danger" asp-validation-for="ProductCategoryId"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

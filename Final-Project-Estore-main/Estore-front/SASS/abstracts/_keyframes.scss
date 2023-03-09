@@ -1,0 +1,31 @@
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+.hero__img.animate__animated.animate__bounceIn {
+    --animate-duration: 0.4s;
+}
+
+.hero__caption {
+    span.animate__animated.animate__fadeInRight {
+        --animation-delay: 0.4s;
+    }
+    h1.animate__animated.animate__fadeInRight {
+        --animation-delay: 0.6s;
+    }
+    p.animate__animated.animate__fadeInRight {
+        --animation-delay: 0.8s;
+    }
+    .hero__btn.animate__animated.animate__fadeInRight {
+        --animation-delay: 1s;
+    }
+}

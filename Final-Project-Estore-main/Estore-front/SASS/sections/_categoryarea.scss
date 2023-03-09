@@ -1,0 +1,72 @@
+@import"../abstracts/variables";
+#category-area {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-family: $play-fair;
+    .section-title {
+        h2 {
+            color: #000;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+    .category-img {
+        position: relative;
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        .category-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 52px;
+            p {
+                color: #000000;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 15px;
+                font-weight: normal;
+                font-family: $poppins;
+            }
+            h2 {
+                color: #1f1f1f;
+                text-transform: capitalize;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.1;
+                text-transform: capitalize;
+                margin-bottom: 13px;
+            }
+            span {}
+            .best {
+                color: #000000;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.1;
+                background: #ffce25;
+                padding: 13px 24px;
+                border-radius: 30px;
+                display: inline-block;
+                font-family: $poppins;
+                a {
+                    color: #000000;
+                }
+            }
+            .collection {
+                display: block;
+                color: #0071fe;
+                text-transform: capitalize;
+                font-size: 30px;
+                line-height: 1.1;
+                text-transform: capitalize;
+                font-family: $Yellow-tail;
+                font-weight: 600;
+                text-shadow: 0px -3px 0px #fff;
+                margin-top: -8px;
+            }
+        }
+    }
+}

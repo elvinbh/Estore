@@ -1,0 +1,61 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Index";
+    
+    
+}
+  @await Component.InvokeAsync("Banner",new { Title = "Blog" })
+
+
+    <!-- Blog area starts -->
+    <section class="blog-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog-container">
+
+                        @foreach (Post post in Model.Posts)
+                       
+                    {
+                       
+                            <div class="blog-item">
+                                <div class="blog-item-img">
+                                    <img src="images/@post.Img" alt="">
+                                    <a asp-action="Blogdetails" asp-route-id="@post.Id">
+                                        <h3>
+                                            @post.CreatedAt.Day
+                                        </h3>
+                                        <p>@post.CreatedAt.ToString("MMM")</p>
+                                    </a>
+                                </div>
+                                <div class="blog-inform">
+                                    <a class="d-inline-block" asp-action="Blogdetails" asp-route-id="@post.Id">
+                                        <h2>@post.Title</h2>
+                                    </a>
+                                    <p></p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> 
+                                             @foreach (PostCategories pc in post.PostCategories)
+                        {
+                                       <span>@pc.Category.Name</span> 
+                                               
+                        }
+                                            </a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                    }
+                        
+                        
+
+                    
+
+                    </div>
+                </div>
+  @await Component.InvokeAsync("Blog")
+             
+            </div>
+        </div>
+    </section>

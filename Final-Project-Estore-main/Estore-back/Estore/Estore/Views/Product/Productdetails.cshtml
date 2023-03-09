@@ -1,0 +1,109 @@
+﻿@model ProductVM
+@{
+    ViewData["Title"] = "Productdetails";
+}
+  @await Component.InvokeAsync("Banner",new { Title = "Single Product" })
+
+     <!-- Testimonial slider starts -->
+    <section class="testimonial-slider-product-detail">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="owl-carousel">
+                        
+                        @foreach (Productimages image in Model.Product.Productimages)
+                        {
+
+
+                         
+                               if (Model.Product.Productimages.ToArray().Length<3)
+                         {
+                              <div class="item" style="height:500px;width:500px">
+
+                                <div class="slide-img">
+                                    <img src="~/images/@image.Img" alt="">
+                                </div>
+
+
+                            </div>
+                             <div class="item" style="height:500px;width:500px">
+
+                                <div class="slide-img">
+                                    <img src="~/images/@image.Img" alt="">
+                                </div>
+
+
+                            </div>
+                             <div class="item" style="height:500px;width:500px">
+
+                                <div class="slide-img">
+                                    <img src="~/images/@image.Img" alt="">
+                                </div>
+
+
+                            </div>
+                         }
+                        else
+                        {
+                               <div class="item" style="height:500px;width:500px">
+
+                                <div class="slide-img">
+                                    <img src="~/images/@image.Img" alt="">
+                                </div>
+
+
+                            </div>
+                        }
+                             
+                          }
+                    
+                        
+
+                         
+
+
+                    </div>
+                    <div class="product-detail text-center">
+                        <h3>
+                           @Model.Product.Name
+                        </h3>
+                        <p>
+                            @Model.Product.Description
+                        </p>
+
+                        <div class="product-add-to-card">
+                            <form method="post"> 
+                            <div class="product-quantity">
+                                
+
+                                
+                                <p>Quantity</p>
+                                <div class="product-count d-inline-block">
+                                    <span class="input-number-decrement minuspilus"> <i class="fas fa-minus"></i></span>
+
+                                    <input style="width: 100px;text-align: center;" class="input-number" type="number" value="@Model.Basket.Quantity"  min="0" max="100">
+                                    
+                                    <span class="input-number-increment minuspilus"> <i class="fas fa-plus"></i></span>
+                                   
+                                </div>
+                              <p>$@Model.Product.Price</p>
+                                
+                            </div>
+                            <div class="add-to-card-btn">
+                                <a type="submit" asp-controller="Cart" asp-action="AddBasket" asp-route-Id="@Model.Product.Id" asp-route-Quantity="@Model.Basket.Quantity" class="load-more">add to cart</a>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+    </section>
+    <!-- Testomonial slider ends -->
+    @await Html.PartialAsync("_SubscribePartial", Model.Subscribe)

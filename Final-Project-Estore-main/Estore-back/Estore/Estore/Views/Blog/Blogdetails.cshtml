@@ -1,0 +1,175 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Blogdetails";
+}
+  @await Component.InvokeAsync("Banner",new { Title = "Single Blog" })
+
+   <!-- Blog area starts -->
+    <section class="blog-area blog-details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="single-blog">
+                        <div class="single-blog-img">
+                            <img class="img-fluid" src="~/images/@Model.Post.Img" alt="" srcset="">
+                        </div>
+                        <div class="blog-details">
+                            <h2>@Model.Post.Title
+                            </h2>
+                            <ul class="blog-info-link mt-3 mb-4">
+                                <li><a href="#"><i class="fa fa-user"></i>   @foreach (PostCategories pc in Model.Post.PostCategories)
+                        {
+                                       <span>@pc.Category.Name</span> 
+                                               
+                        }
+                        </a></li>
+                                <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                     @Html.Raw(Model.Post.Description)
+                        </div>
+                    </div>
+                    <div class="blog-post-navigation">
+                        <div class="d-sm-flex justify-content-between text-center">
+                            <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily and 4 people like this</p>
+                            <div class="col-sm-4 text-center my-2 my-sm-0">
+
+                            </div>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="navigation-area">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center text-left">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img class="img-fluid" src="~/images/blogdetailsleft.webp" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="#">
+                                            <i class="lnr text-white fa fa-arrow-left" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="nav-area-details">
+                                        <p>Prev Post</p>
+                                        <a href="#">
+                                            <h4>Space The Final Frontier</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center text-right">
+                                    <div class="nav-area-details">
+                                        <p>Next Post</p>
+                                        <a href="#">
+                                            <h4>Telescopes 101</h4>
+                                        </a>
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="#">
+
+                                            <i class="lnr text-white fa fa-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img class="img-fluid" src="~/images/blogdetailsright.webp">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-author">
+                            <div class="media align-items-center">
+                                <img src="~/images/@Model.Post.BlogWriter.Img" alt="">
+                                <div class="media-body">
+                                    <a href="#">
+                                        <h4>@Model.Post.BlogWriter.Name @Model.Post.BlogWriter.Surname</h4>
+                                    </a>
+                                    <p>@Model.Post.BlogWriter.About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-area">
+                            <h4>05 Comments</h4>
+                            @foreach (BlogComments comment in Model.Post.BlogComments)
+                           {
+                                <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="~/images/user.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <p class="comment">
+                                                @comment.Text
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <h5>
+                                                        <a href="#">@comment.Name @comment.SurName</a>
+                                                    </h5>
+                                                    <p class="date">@comment.CreatedAt.ToString("MMMMMMMM") @comment.CreatedAt.Day, @comment.CreatedAt.Year at @comment.CreatedAt.TimeOfDay </p>
+                                                </div>
+                                                <div class="reply-btn">
+                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           }
+    
+                            </div>
+                        
+                         <div style="border-top: 1px solid #eee;padding-top: 45px;margin-top: 50px;  margin-bottom: 20px;" class="comment-form">
+                            <h4 style="margin-bottom: 40px; font-size: 18px;line-height: 22px;font-family: "Playfair Display", serif;">Leave a Reply</h4>
+                            <form class="contact-form" asp-controller="Blog" asp-action="CreateComment" asp-route-Id="@Model.Post.Id" method="post">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input asp-for="@Model.Post.Id"  type="hidden"/>
+                                            <textarea required class="form-control w-100 h-100" name="Text" id="Text" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write Comment'" placeholder="Write Comment" style="margin-top: 0px; margin-bottom: 0px; height: 87px;"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 position-relative">
+                                        <div class="form-group">
+                                            <input required  style="height:48px" class="form-control" name="Name" id="Name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 position-relative">
+                                        <div class="form-group">
+                                            <input required style="height:48px" class="form-control" name="SurName" id="SurName" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Surname'" placeholder="Surname">
+                                        </div>
+                                    </div>
+
+                                     <div class="col-sm-12 position-relative">
+                                        <div class="form-group">
+                                            <input asp-for="@Model.BlogComment.Email"  style="height:48px" class="form-control" name="Email" id="Email" type="Email" onfocus="this.placeholder = ''" onblur="this.placeholder='Email'" placeholder="Email">
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                </div>
+                                <div class="form-group mt-3">
+                                    <button type="submit" class="btn">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                @await Component.InvokeAsync("Blog")
+              
+            </div>
+        </div>
+
+    </section>
+    <!-- Blog area ends -->
+
+

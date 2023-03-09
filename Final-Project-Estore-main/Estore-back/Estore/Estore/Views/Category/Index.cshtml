@@ -1,0 +1,19 @@
+﻿@model CategoryVM
+@{
+    ViewData["Title"] = "Index";
+}
+  @await Component.InvokeAsync("Banner",new { Title = "Category" })
+
+   <!-- Latest products area starts -->
+    <section id="latest-products" class="category-filter-pading">
+        <div class="container">
+            <div class="row product-btn d-flex justify-content-start align-items-start">
+               
+             @await Component.InvokeAsync("Filter","float-start")
+        </div>
+
+    </section>
+    <!-- Latest products area ends -->
+ @await Html.PartialAsync("_LatestSubscribePartial",Model.LatestSubscribe)
+    @await Html.PartialAsync("_ShopMethodPartial",Model.ShopMethods)
+    @await Html.PartialAsync("_GalleryPartial",Model.Galleries)

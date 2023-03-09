@@ -1,0 +1,109 @@
+﻿@using Estore.ViewModels.BasketViewModel; 
+@model List<BasketVM>
+@{
+    ViewData["Title"] = "Index";
+    double SubTotal = Model.Sum(p => p.Price * p.Quantity);
+
+//    List<int> productIDs = new List<int>();
+//    var _item = Model.FindAll(p => p.Id >0);
+//    var localitem = _item.Find(p => p.Id > 0).Id;
+//productIDs.Add(localitem);
+
+}
+
+    <!-- Card area starts -->
+    <section class="card-area">
+        <div class="container">
+
+            
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                               
+                                      @foreach (BasketVM item in Model)
+                           {
+                            <tr>
+                         
+                                <td>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="images/@item.MainImage">
+                                        </div>
+                                        <div class="media-body">
+                                            <p>@item.Title</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$@item.Price</h5>
+                                </td>
+                                <td>
+                                    <div class="product-count">
+
+                                       @*<input class="input-number" asp-for="@item.Quantity" type="number" id="quantity" name="Quantity" value="@item.Quantity" min="1" max="100">*@
+                                       <p>@item.Quantity</p>
+@*                                       <a class="input-number-decrement minuspilus"> <i class="fa fa-minus" aria-hidden="true"></i></a>
+                                        <a class="input-number-increment minuspilus"> <i class="fa fa-plus" aria-hidden="true"></i></a>
+*@
+
+                                    </div>
+                                </td>
+                              
+                                <td>
+                                    <h5>$@((item.Price*item.Quantity).ToString("F2"))</h5>
+                                </td>
+                            </tr>
+                              }
+                            <tr class="bottom-button">
+                               
+                                <td class="emptytd"></td>
+                                <td class="emptytd"></td>
+
+
+                            
+
+
+                            </tr>
+                            <tr>
+                                <td class="emptytd"></td>
+                                <td class="emptytd"></td>
+
+                                <td>
+                                    <h5>Subtotal</h5>
+                                </td>
+                                <td>
+                                    <h5>$@SubTotal.ToString("F2")</h5>
+                                </td>
+                            </tr>
+                           
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="checkoutbtncontainer float-end">
+                        <a class="btn" asp-controller="Product" asp-action="Index">Continue Shopping</a>
+                        <a class="btn btn" asp-controller="Checkout" asp-action="Index">Proceed to checkout</a>
+                    </div>
+                    <div class="clearfix">
+
+                    </div>
+                </div>
+
+    
+
+
+        </div>
+    </section>
+     

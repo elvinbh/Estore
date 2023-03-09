@@ -1,0 +1,91 @@
+#latest-products {
+    .product-btn {
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 80px;
+        padding: 0 11px;
+    }
+    .filter-group {
+        margin-bottom: 15px;
+        padding-bottom: 0px;
+        position: relative;
+        border: 0;
+        .filter-item {
+            display: inline-block;
+            .filter-item-btn {
+                padding-bottom: 10px;
+                display: block;
+                color: #8f8f96;
+                text-transform: capitalize;
+                font-size: 16px;
+                border: 0;
+                border-bottom: 2px solid transparent;
+                padding-left: 10px;
+                &:hover {
+                    color: #ff003c;
+                }
+                .active {
+                    color: #ff003c !important;
+                }
+            }
+        }
+        &::after {
+            clear: both;
+        }
+    }
+    .section-title {
+        h2 {
+            color: #000;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+    .single-product {
+        .product-img {
+            margin-bottom: 30px;
+            position: relative;
+            .new-product {
+                position: absolute;
+                top: 25px;
+                left: 23px;
+                span {
+                    background: #ff003c;
+                    padding: 3px 16px;
+                    border-radius: 30px;
+                    color: #fff;
+                }
+            }
+        }
+        h4 a {
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: #383838;
+        }
+        .product-caption {
+            .product-ratting {
+                i {
+                    color: #ffbc07;
+                    margin-bottom: 14px;
+                }
+                i.low-star {
+                    color: #d3d3d3;
+                }
+            }
+            .price ul li {
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 500;
+                padding-right: 13px;
+            }
+            .price ul li.discount {
+                color: #ff003c;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.category-filter-pading {
+    padding-top: 190px !important;
+    padding-bottom: 135px !important;
+}

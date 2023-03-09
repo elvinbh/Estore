@@ -1,0 +1,97 @@
+@import "../abstracts/all";
+.testimonial-slider-product-detail {
+    margin-top: 150px;
+    .owl-carousel {
+        .slide-img {
+            img {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .owl-nav {
+            padding: 50px;
+            position: relative;
+            top: -350px;
+            button.owl-prev,
+            button.owl-next {
+                position: absolute;
+                text-indent: 2px;
+                width: 40px;
+                height: 40px;
+                font-size: 14px !important;
+                line-height: 40px !important;
+                border-radius: 50%;
+                color: rgba(255, 255, 255, 0.6) !important;
+                transition: 0.5s;
+                background-color: rgb(151, 131, 131) !important;
+                opacity: 0.4;
+            }
+            button.owl-prev {
+                right: auto;
+                left: 3%;
+            }
+            button.owl-next {
+                right: 3%;
+                left: auto;
+            }
+        }
+    }
+    .product-detail {
+        margin-bottom: 150px;
+        h3 {
+            font-size: 40px;
+            font-family: "$play-fair";
+            color: #0b1c39;
+            margin-top: 0px;
+            font-style: normal;
+            font-weight: 500;
+        }
+        p {
+            line-height: 30px;
+            margin-top: 50px;
+            color: #707070;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        .product-add-to-card {
+            margin-top: 60px;
+            .product-quantity {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    margin-top: 0 !important;
+                    color: #828bb2;
+                }
+                .product-count {
+                    border: 1px solid #828bb2;
+                    margin: 0 35px;
+                    .product-count-item {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        display: inline-block;
+                        i {
+                            color: rgba(122, 122, 122, 0.5);
+                        }
+                    }
+                    input {
+                        background-color: #828bb2;
+                        color: #fff;
+                        border: 1px solid #828bb2;
+                    }
+                }
+            }
+            .add-to-card-btn {
+                margin-top: 60px;
+                .load-more {
+                    padding: 20px 36px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+﻿ @model LatestSubscribe
+<!-- Latest subscribe area starts -->
+    <section class="latest-wrapper plr-60">
+        <div class="latest-area latest-height d-flex align-items-center" style="background-image: url(images/@Model.BackgroundImg);">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-xl-5 col-lg-5 col-md-6 offset-xl-1 offset-lg-1">
+                        <div class="latest-caption">
+                            <h2>@Html.Raw(@Model.Title)</h2>
+                            <p>@Model.Description</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 ">
+                        <div class="latest-subscribe">
+                            <form action="javascript:void(0);">
+                                <input type="email" placeholder="Your email here">
+                                <button>Shop Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-man">
+                <img src="images/@Model.Img" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Latest subscribe area ends -->

@@ -1,0 +1,29 @@
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .shop-information-title {
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 767px) {}
+
+@media (min-width:768px) {}
+
+@media (max-width: 991px) {
+    .shop-information-title {
+        h3 {
+            font-size: 25px;
+        }
+    }
+    .about-area .about-text h3 {
+        margin: 5px 0 30px;
+        font-size: 20px;
+    }
+}

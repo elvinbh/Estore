@@ -1,0 +1,59 @@
+@import "../abstracts/all";
+header {
+    #main-navbar {
+        @include navbarfont;
+    }
+    ul,
+    ul li {
+        list-style-type: none;
+        text-transform: capitalize;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    .logo {
+        padding: 0;
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+    }
+}
+
+.sticky {
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.10);
+    z-index: 9999;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: #fff;
+    padding: 0px 170px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 15px !important;
+    padding-bottom: 0px !important;
+}
+
+.msticky {
+    z-index: 9999;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed !important;
+    top: 0;
+    padding: 0px !important;
+    padding-top: 15px !important;
+    padding-bottom: 0px !important;
+}
+
+.nav {
+    .nav-item {
+        z-index: 10000;
+    }
+}

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Testimonial>
+
+    <!-- Testimonial slider starts -->
+    <section class="testimonial-slider">
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center pt-5">
+                <div class="col-lg-8">
+                    <div class="owl-carousel">
+
+                        @foreach (Testimonial item in Model)
+                       {
+                              <div class="item">
+                            <div class="testimonial-img">
+                                <img class="img-circle" src="images/@item.Img" alt="">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <p>@item.Text</p>
+
+
+                            <div class="testimonial-name">
+                                <h5>- @item.Name @item.Surname</h5>
+                            </div>
+                        </div>
+                           
+                       }
+                     
+                       
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Testomonial slider ends -->

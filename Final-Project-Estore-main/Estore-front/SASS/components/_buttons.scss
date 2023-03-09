@@ -1,0 +1,101 @@
+.custom-btn {
+    background: #2577fd !important;
+    text-transform: capitalize!important;
+    color: #fff!important;
+    cursor: pointer!important;
+    display: inline-block!important;
+    font-size: 18px!important;
+    font-weight: 400!important;
+    letter-spacing: 1px!important;
+    line-height: 0!important;
+    margin-bottom: 0!important;
+    padding: 27px 44px!important;
+    border-radius: 25px!important;
+    margin: 10px!important;
+    cursor: pointer!important;
+    transition: color 0.4s linear!important;
+    position: relative!important;
+    z-index: 1!important;
+    border: 0!important;
+    overflow: hidden!important;
+    margin: 0!important;
+}
+
+.black-btn {
+    background: #000;
+    box-shadow: 0px 20px 50px 0px rgba(22, 22, 22, 0.2);
+    transform: translateY(0px);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 27px 44px;
+    border-radius: 25px;
+    color: #fff;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.black-btn:hover {
+    box-shadow: 0px 20px 50px 0px rgba(12, 9, 9, 0.2);
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+.btn {
+    background: #2577fd !important;
+    text-transform: capitalize !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    line-height: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 27px 44px !important;
+    border-radius: 25px !important;
+    margin: 10px !important;
+    cursor: pointer !important;
+    transition: color 0.4s linear !important;
+    position: relative !important;
+    z-index: 1 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+}
+
+.load-more {
+    padding: 20px 30px;
+    background-color: transparent;
+    color: #2577fd;
+    text-transform: uppercase;
+    border: 1px solid #2577fd;
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
+}
+
+.login-area-btn {
+    display: block;
+    width: 100%;
+    margin: 30px 0 17px;
+    padding: 18px 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #2577fd;
+    font-size: 15px;
+    color: #2577fd;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.forgetpassword {
+    color: #777777;
+    text-align: right;
+    float: right;
+    text-transform: capitalize;
+}

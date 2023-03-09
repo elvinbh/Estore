@@ -1,0 +1,42 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name">
+        <span class="alert-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ProductImagesFile"></label>
+        <input class="form-control" accept="image/*" asp-for="ProductImagesFile">
+        <span class="alert-danger" asp-validation-for="ProductImagesFile"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price"></label>
+        <input class="form-control" asp-for="Price">
+        <span class="alert-danger" asp-validation-for="Price"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description"></label>
+        <input class="form-control" asp-for="Description">
+        <span class="alert-danger" asp-validation-for="Description"></span>
+    </div>
+       
+    <div class="mb-3">
+        <label>Author</label>
+        <select class="form-control" asp-for="ProductCategoryId">
+            @foreach (ProductCategory category in ViewBag.Categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        </select>
+        <span class="alert-danger" asp-validation-for="ProductCategoryId"></span>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

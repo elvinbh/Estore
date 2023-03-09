@@ -1,0 +1,77 @@
+@import "../abstracts/variables";
+footer {
+    .footer-padding {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+    .footer-area {
+        .footer-logo {
+            margin-bottom: 40px;
+        }
+        .footer-title {
+            font-size: 16px;
+            p {
+                color: $footer-color;
+                margin-bottom: 50px;
+                line-height: 1.8;
+            }
+            h4 {
+                color: #000;
+                font-size: 20px;
+                margin-bottom: 29px;
+                text-transform: capitalize;
+            }
+            ul {
+                padding-left: 0 !important;
+                li {
+                    color: #012f5f;
+                    margin-bottom: 15px;
+                    a {
+                        color: $footer-color;
+                        font-weight: 300;
+                        text-decoration: none;
+                        background-color: transparent;
+                        transition: all 0.3s ease-out 0s;
+                        font-weight: 400;
+                        &:hover {
+                            color: #2577fd;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .single-footer-div {
+            margin-bottom: 50px;
+        }
+        .footer-copy-right {
+            padding-top: 50px;
+            p {
+                color: #888888;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 2;
+                margin-bottom: 20px;
+                i {
+                    color: #2577fd;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                }
+            }
+            .footer-social {
+                a {
+                    i {
+                        color: #222222;
+                        margin-right: 12px;
+                        font-size: 14px;
+                        transition: all 0.4s ease-out 0s;
+                    }
+                }
+            }
+        }
+    }
+}

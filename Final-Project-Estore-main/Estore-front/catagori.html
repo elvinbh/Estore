@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="animate__animated animate__bounce" onclick="topFunction()" id="topscrollbtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <!-- Header starts -->
+    <header>
+        <section id="main-navbar">
+            <nav class="navbar-expand-lg navbar-dark bg-black top-header  d-none d-lg-flex">
+                <div class="container-fluid">
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <ul class="p-2 nav">
+                                            <li class="nav-item">
+                                                <div class="flag">
+                                                    <img src="data:image/webp;base64,UklGRvwBAABXRUJQVlA4TPABAAAvGsADAL/jNrZtVdlPcIv+kHlKgfRM9F05pw23sW2ryn7yP64pQ0wJVEJMtTTA0IOFrvccR5Ikq0r3/I+7Oyy5FfdfO09mev5jdI5gdjW5+DuAGCDL386i2MLInwEDIEKM/HHD7e8aa6nbU+xPmKxxGcEAxMvxe8MVb7M+3Bz7E+/uxfbVd5vvsOsBCgmAHMEJbDGAASQAAjCASJUlSziolj/Nf6cgCLYYwGI3pEIKduOvYAOILTYQACS7kFzIlKu5eOFYhzap69Dv8DLEYuZvJQsGkkhiAEux6UkrNyjZjqk6/jWdpFeym0qff37nBGRQYmD9asyLt3K9tUy/vtuHmCkVEzPFbHI16xZwRywmFQqJquFTH5kIn+udAqJta2ecqW1OzVg1prad2kltv/9qFuYNvv+7Ef3P/sHxgYm+ld7lnqWNlpqm8KEtV9rp3qVtZXP+Jy83fNTVbdXQAKtrtePkKHx4T4UCdCqQ1tpuPSLf88kjnzw/5Rq2ToYuSFn8TmSEjxzYjkVkkpDXW2uT4al9w9EdSzccZeE3vyD8fmxmdkpMg+cm79ovzsLfXl/enz+ePh+/Hv4OL8/DK8tKRUl5MReVF1UUVucEskWgoS6sPikCLAJVmWncXF3/MzMAMMAMgAHg9DiNrHSaG9MA"
+                                                        style="vertical-align: middle;
+                                 border-style: none;">
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <p class="nav-link" href="#"> +777 2345 7886</p>
+                                    </li>
+                                </ul>
+
+
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="login.html"> My Account</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"> Wish List</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product-list.html">Shopping</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cart.html">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="checkout.html">Checkout</a>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </nav>
+
+
+            <div class="bottom-header mt-1">
+                <div class="container-fluid">
+                    <div style="top:10px;" class="row align-items-center position-relative">
+
+                        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                            <div class="logo d-flex justify-content-start">
+
+                                <a href="index.html"><img src="images/logo.webp"></a>
+
+                            </div>
+                        </div>
+                        <div class="bottom-header-nav col-xl-6 col-lg-8 col-md-7 col-sm-5 d-flex justify-content-center">
+                            <div class="d-none d-lg-block">
+                                <nav>
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html"> Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="catagori.html"> Category</a>
+                                        </li>
+                                        <li class="nav-item latest">
+                                            <a class="nav-link" href="#">Latest</a>
+                                            <ul>
+                                                <li>
+                                                    <a class="" href="product-list.html">product list</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="productdetails.html"> product details</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Blog</a>
+                                            <ul>
+                                                <li>
+                                                    <a class="" href="blog.html">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="blogdetails.html"> Blog details</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Pages</a>
+                                            <ul>
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="confirmation.html">Confirmation</a></li>
+                                                <li><a href="cart.html">Shopping Cart</a></li>
+                                                <li><a href="checkout.html">Product Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+
+                                </nav>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 d-flex fix-card align-items-center">
+                            <div class="form-box d-none d-xl-table-row">
+                                <input class="d-none d-xl-table-cell" type="text" name="Search" placeholder="Search products">
+                                <div class="search-icon d-none d-xl-table-cell">
+                                    <i class="fas fa-search special-tag"></i>
+                                </div>
+                            </div>
+                            <ul class="bottom-header-right  d-flex d-lg-table-row">
+
+                                <li class="d-none d-xl-table-cell">
+                                    <div class="favorit-items">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+                                <li class="d-lg-table-cell shopping">
+                                    <div class="shopping-card">
+                                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                    </div>
+                                </li>
+                                <li class="d-none d-lg-table-cell"> <a href="login.html" class="btn header-btn">Sign in</a></li>
+
+
+                            </ul>
+
+
+                        </div>
+                        <div class="col-12 pt-5">
+
+                            <div class="mobile-navbar d-block d-lg-none">
+
+                                <div class="mobile-navbar-menu">
+
+                                    <a href="javascript:void(0);" onclick="myFunction()" aria-haspopup="true" role="button" tabindex="0" class="mobile-nav-btn icon"><span class="mobile-nav-menu-txt">MENU</span><span class="mobile-nav-icon position-relative"><span style="top:0%" class="mobile-nav-icon-bar position-absolute"></span><span style="top: 33%;" class="mobile-nav-icon-bar position-absolute"></span><span style="top: 66%;" class="mobile-nav-icon-bar position-absolute"></span></span></a>
+                                    <ul aria-hidden="true" role="menu" id="myLinks" class="mobile-navbar-ul">
+                                        <li style="padding:0px 0px;" class="mobile-navbar-li">
+                                            <a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="index.html"> Home</a>
+                                        </li>
+                                        <li style=" padding:0px 0px;" class="mobile-navbar-li">
+                                            <a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="catagori.html"> Category</a>
+                                        </li>
+                                        <li style=" padding:0px 0px;" class="mobile-navbar-li">
+                                            <a tabindex="-1" role="menuitem" aria-haspopup="true" class="mobileanchor firstanchor" href="#">Latest
+                                        <span class="mobilenav-arrow">+</span>
+                                    </a>
+                                            <ul role="menu" aria-hidden="false" class="mobile-submenu firstul">
+                                                <li>
+                                                    <a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="product-list.html">product list</a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="productdetails.html"> product details</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li style=" padding:0px 0px;" class="mobile-navbar-li">
+                                            <a tabindex="-1" class="mobileanchor secondanchor" href="#">Blog
+                                        <span class="mobilenav-arrow">+</span>
+                                    </a>
+                                            <ul class="mobile-submenu secondul">
+                                                <li>
+                                                    <a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="blog.html">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" role="menuitem" class="mobile-navbar-a" class="mobile-navbar-a" href="blogdetails.html"> Blog details</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li style=" padding: 0px 0px;" class="mobile-navbar-li"><a tabindex="-1" aria-haspopup="true" class="mobileanchor thirdanchor" href="#">Pages
+                                    <span class="mobilenav-arrow">+</span>
+                                </a>
+                                            <ul class="mobile-submenu thirdul">
+                                                <li><a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="about.html">About</a></li>
+                                                <li><a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="confirmation.html">Confirmation</a></li>
+                                                <li><a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="cart.html">Shopping Cart</a></li>
+                                                <li><a tabindex="-1" role="menuitem" class="mobile-navbar-a" href="checkout.html">Product Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li style=" padding: 0px 0px;" class="mobile-navbar-li">
+                                            <a tabindex="-1" class="mobile-navbar-a" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <!-- Header ends -->
+    <!-- Banner area starts -->
+    <section class="banner-area d-flex align-items-center" style="background-image: url(&quot;images/banner.webp&quot;);" )>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text-class text-center">
+                        <h2>
+                            Product Catagori
+                        </h2>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner area ends -->
+    <!-- Latest products area starts -->
+    <section id="latest-products" class="category-filter-pading">
+        <div class="container">
+            <div class="row product-btn d-flex justify-content-start align-items-start">
+                <div class="col-xl-8 col-lg-7 col-md-7">
+                    <ul id="filter-group" class="filter-group float-start">
+                        <li class="filter-item"><a class="filter-item-btn active" onclick="filterSelection('all')" href="javascript:void(0);">All</a></li>
+                        <li class="filter-item"><a class="filter-item-btn" onclick="filterSelection('new')" href="javascript:void(0);">New</a></li>
+                        <li class="filter-item"><a class="filter-item-btn" onclick="filterSelection('featured')" href="javascript:void(0);">Featured</a> </li>
+                        <li class="filter-item"><a class="filter-item-btn" onclick="filterSelection('offer')" href="javascript:void(0);">Offer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-xl-4 col-lg-4 col-md-6 filterDiv new offer">
+
+                    <div class="single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/filter1.webp" alt="">
+                            <div class="new-product">
+                                <span>New</span>
+                            </div>
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">Shorts</a></h4>
+                            <div class="price">
+                                <ul>
+                                    <li>$10.00</li>
+                                    <li class="discount">$20.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 filterDiv featured">
+                    <div class="single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/filter2.webp" alt="">
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">Green sweater</a></h4>
+                            <div class="price">
+                                <ul>
+                                    <li>$20.00</li>
+                                    <li class="discount">$40.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 filterDiv new offer">
+                    <div class="single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/filter3.webp" alt="">
+                            <div class="new-product">
+                                <span>New</span>
+                            </div>
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">Yellow sweater</a></h4>
+                            <div class="price">
+                                <ul>
+                                    <li>$25.00</li>
+                                    <li class="discount">$50.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 filterDiv featured offer">
+                    <div class="single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/filter4.webp" alt="">
+
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">Gray shirt</a></h4>
+                            <div class="price">
+                                <ul>
+                                    <li>$10.00</li>
+                                    <li class="discount">$25.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 filterDiv offer">
+                    <div class=" single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/filter5.webp" alt="">
+
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">Sweatpants</a></h4>
+                            <div class="price">
+                                <ul>
+                                    <li>$20.00</li>
+                                    <li class="discount">$30.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 filterDiv new featured">
+                    <div class="single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/filter6.webp" alt="">
+                            <div class="new-product">
+                                <span>New</span>
+                            </div>
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">Jeans jacket</a></h4>
+                            <div class="price">
+                                <ul>
+                                    <li>$60.00</li>
+                                    <li class="discount">$100.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Latest products area ends -->
+    <!-- Latest subscribe area starts -->
+    <section class="latest-wrapper plr-60">
+        <div class="latest-area latest-height d-flex align-items-center" style="background-image: url(&quot;images/latest1.webp&quot;);">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-xl-5 col-lg-5 col-md-6 offset-xl-1 offset-lg-1">
+                        <div class="latest-caption">
+                            <h2>Get Our<br>Latest Offers News</h2>
+                            <p>Subscribe news latter</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 ">
+                        <div class="latest-subscribe">
+                            <form action="javascript:void(0);">
+                                <input type="email" placeholder="Your email here">
+                                <button>Shop Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-man">
+                <img src="images/latest2.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Latest subscribe area ends -->
+    <!-- Shop method area starts -->
+    <section class="shop-method-area section-padding30">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="shopping-method mb-40">
+                        <i class="fab fa-dropbox"></i>
+                        <h6>Free Shipping Method</h6>
+                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="shopping-method mb-40">
+                        <i class="fas fa-unlock"></i>
+                        <h6>Secure Payment System</h6>
+                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="shopping-method mb-40">
+                        <i class="fas fa-sync"></i>
+                        <h6>Secure Payment System</h6>
+                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop method area ends -->
+
+    <!-- Gallery area starts -->
+    <section class="gallery-wrapper plr-60">
+        <div class="gallery-area">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="gallery-image">
+                        <img src="images/gallery.webp" alt="">
+                    </div>
+                    <div class="gallery-image">
+                        <img src="images/gallery1.webp" alt="">
+                    </div>
+                    <div class="gallery-image">
+                        <img src="images/gallery2.webp" alt="">
+                    </div>
+                    <div class="gallery-image">
+                        <img src="images/gallery3.webp" alt="">
+                    </div>
+                    <div class="gallery-image">
+                        <img src="images/gallery4.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Gallery area ends -->
+
+
+    <!-- Footer starts  -->
+    <footer>
+        <div class="footer-area footer-padding ">
+            <div class="container ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 ">
+                        <div class="single-footer-div ">
+                            <div class="footer-logo ">
+                                <a href="index.html "><img src="images/logo.webp " alt=" "></a>
+                            </div>
+                            <div class="footer-title ">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 ">
+                        <div class="footer-title ">
+                            <h4>Quick Links</h4>
+
+
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="product-list.html"> Offers &amp; Discounts</a></li>
+                                <li><a href="checkout.html"> Get Coupon</a></li>
+                                <li><a href="contact.html"> Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7 ">
+                        <div class="footer-title ">
+                            <h4>New Products</h4>
+                            <ul>
+                                <li><a href="product-list.html">Woman Cloth</a></li>
+                                <li><a href="product-list.html">Fashion Accessories</a></li>
+                                <li><a href="product-list.html"> Man Accessories</a></li>
+                                <li><a href="product-list.html"> Rubber made Toys</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7 ">
+                        <div class="footer-title ">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="# ">Frequently Asked Questions</a></li>
+                                <li><a href="# ">Terms &amp; Conditions</a></li>
+                                <li><a href="# ">Privacy Policy</a></li>
+                                <li><a href="# ">Privacy Policy</a></li>
+                                <li><a href="# ">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-7 col-lg-7 col-md-7 ">
+                        <div class="footer-copy-right ">
+                            <p>
+                                Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | This template is made with <i class="far fa-heart "></i> by <a href="https://colorlib.com " target="_blank ">Colorlib</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 ">
+                        <div class="footer-copy-right float-end ">
+
+                            <div class="footer-social ">
+                                <a href="# "><i class="fab fa-twitter "></i></a>
+                                <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                <a href="# "><i class="fab fa-behance "></i></a>
+                                <a href="# "><i class="fas fa-globe "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="JS/slick.js "></script>
+    <script src="js/script.js ">
+    </script>
+</body>
+
+</html>

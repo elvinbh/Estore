@@ -1,0 +1,69 @@
+﻿@model AboutVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+  @await Component.InvokeAsync("Banner",new { Title = "About" })
+
+   <!-- About area starts -->
+
+    <section class="about-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about-text text-left">
+                        <h5>@Model.AboutText.Title usss</h5>
+                        <h3>@Model.AboutText.Description</h3>
+                    </div>
+                    <div class="about-modal">
+                        <img class="img-fluid" src="~/images/@Model.AboutText.AboutVideo.Img" alt="">
+                        <a class="about-play" href="javascript:void(0);"></a>
+
+
+                    </div>
+                    <div class="youtube-video">
+                        <iframe id="existing-iframe-example" width="640px" height="640px" src="@Model.AboutText.AboutVideo.Video" frameborder="0" style="border: solid 4px #37474F"></iframe>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About area ends -->
+    <!-- Shop-information-section starts -->
+
+    <section class="shop-information-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <div class="shop-information-title">
+                        <h3>@Model.AboutShopInfo.Title</h3>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="shop-information-content">
+                        <p>@Model.AboutShopInfo.Content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                @foreach (AboutShopItem item in Model.AboutShopInfo.Items)
+               {
+                    <div class="col-lg-3 col-sm-6">
+                    <div class="single-shop-information">
+                        <img src="~/images/@item.Img" alt="#">
+                        <h4>@item.Name</h4>
+                    </div>
+                </div>
+               }
+               
+            </div>
+        </div>
+    </section>
+    <!-- Shop-information-section ends -->
+
+  @await Component.InvokeAsync("Testimonial")
+
+ 
+    @await Html.PartialAsync("_SubscribePartial", Model.Subscribe)

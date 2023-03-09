@@ -1,0 +1,68 @@
+﻿@model IEnumerable<FilterCategory>
+
+                <div class="col-xl-8 col-lg-7 col-md-7">
+                    <ul id="filter-group" class="filter-group @Model.FirstOrDefault().Float">
+                        <li class="filter-item"><a style="cursor:pointer" class="filter-item-btn active" onclick="filterSelection('all')">All</a></li>
+                        @foreach (FilterCategory item in Model)
+                       {
+                            <li class="filter-item"><a style="cursor:pointer" class="filter-item-btn" onclick="filterSelection('@item.Category')">@item.Category</a></li>
+                       }
+                       
+                     
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                @foreach (FilterCategory category in Model)
+               {
+                   foreach (FilterItems item in category.FilterItems)
+                   {
+                        <div class="col-xl-4 col-lg-4 col-md-6 filterDiv @item.Filterselect">
+
+                    <div class="single-product mb-60">
+                        <div class="product-img">
+                            <img src="images/@item.Productimg" alt="">
+                           @if (@item.Filterselect=="new")
+                          {
+                               <div class="new-product">
+                                <span>New</span>
+                            </div>
+                          }
+                        </div>
+                        <div class="product-caption">
+                            <div class="product-ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star low-star"></i>
+                                <i class="far fa-star low-star"></i>
+                            </div>
+                            <h4><a href="#">@item.Name</a></h4>
+                            <div class="price">
+                                <ul>
+                                        @if (item.IsDiscount)
+                                        {
+                                         <li>$@item.Price</li>
+                                            <li class="discount">$@item.DiscountPrice</li>
+
+                                        }
+                                        else
+                                        {
+                                         <li>$@item.Price</li>
+                                    
+
+                                        }
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   }
+                 
+               }
+
+
+
+            </div>

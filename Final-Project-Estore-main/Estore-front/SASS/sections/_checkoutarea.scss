@@ -1,0 +1,247 @@
+.checkout-area {
+    padding: 200px 0px;
+    .customer-form {
+        .check-title {
+            h2 {
+                font-size: 14px;
+                font-weight: normal;
+                font-family: $play-fair;
+                background: #f7f7f7;
+                line-height: 40px;
+                padding-left: 30px;
+                margin-bottom: 0px;
+                a {
+                    color: #2577fd;
+                    text-decoration: underline
+                }
+            }
+        }
+        p {
+            margin-top: 15px;
+            padding-left: 30px;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .login-form {
+            max-width: 710px;
+            margin-left: 15px;
+        }
+    }
+    .shopping-cupon {
+        margin-bottom: 40px;
+        .check-title {
+            h2 {
+                font-size: 14px;
+                font-weight: normal;
+                font-family: "Playfair Display", serif;
+                background: #f7f7f7;
+                line-height: 40px;
+                padding-left: 30px;
+                margin-bottom: 0;
+                a {
+                    color: #2577fd;
+                    text-decoration: underline !important;
+                }
+            }
+        }
+        input {
+            margin-left: 30px;
+            max-width: 730px;
+            width: 100%;
+            display: block;
+            height: 40px;
+            border-radius: 3px;
+            padding: 0px 15px;
+            border: 1px solid #eeeeee;
+            outline: none;
+            box-shadow: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .apply-btn {
+            border: 1px solid #eeeeee;
+            display: inline-block;
+            line-height: 38px;
+            padding: 0px 40px;
+            color: #0e6970;
+            text-transform: capitalize;
+            font-family: $play-fair;
+            font-weight: 700;
+            border-radius: 50px;
+            margin-left: 30px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+    }
+    .form-group {
+        input {}
+        textarea {
+            height: 100%;
+        }
+    }
+    .create-account {
+        display: inline-block;
+        margin-left: 15px;
+        input {
+            margin-right: 10px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+        }
+        h3 {
+            font-size: 18px;
+            color: #415094;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+    }
+    .forget-password {
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: $play-fair;
+        color: #828bb2;
+        font-weight: normal;
+    }
+    .order-details {
+        background: #f7f7f7;
+        padding: 30px;
+        h2 {
+            border-bottom: 1px solid #dddddd;
+            font-size: 18px;
+            font-weight: 500;
+            color: #415094;
+            padding-bottom: 15px;
+            font-family: $play-fair;
+        }
+        .order-product-list {
+            li {
+                a {
+                    font-size: 14px;
+                    color: #828bb2;
+                    font-weight: normal;
+                    border-bottom: 1px solid #eeeeee;
+                    display: block;
+                    line-height: 42px;
+                    .middle {
+                        float: none;
+                        width: 50px;
+                        text-align: right;
+                        display: inline-block;
+                        margin-left: 30px;
+                        color: #415094;
+                    }
+                    .last {
+                        float: right;
+                        &::after {
+                            clear: both;
+                        }
+                    }
+                    span {
+                        float: right;
+                        &::after {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+        .order-total-list {
+            text-transform: uppercase;
+            li {
+                a {
+                    text-transform: uppercase;
+                    color: #415094;
+                    font-weight: 500;
+                    font-size: 14px;
+                    border-bottom: 1px solid #eeeeee;
+                    display: block;
+                    line-height: 42px;
+                    span {
+                        float: right;
+                        color: #828bb2;
+                        text-transform: capitalize;
+                        &::after {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .payment-item {
+        .radio-btn {
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            input {
+                position: absolute;
+                visibility: hidden;
+            }
+            label {
+                display: block;
+                position: relative;
+                padding: 0px 25px 21px 25px;
+                height: 14px;
+                z-index: 9;
+                cursor: pointer;
+                transition: all 0.25s linear;
+                font-family: "Playfair Display", serif;
+                font-weight: 500;
+                color: #415094;
+                font-size: 13px;
+                letter-spacing: 0.25px;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            background: #fff;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .check {}
+    }
+    .create-acount {
+        a {
+            color: #2577fd;
+        }
+    }
+    .paypal {
+        margin-top: 15px !important;
+    }
+    .create-account {
+        input {
+            &::selection {
+                color: blue;
+            }
+        }
+    }
+    .userlogin {
+        display: inline-block;
+        input {
+            border: 1px solid #eeeeee;
+            height: 40px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-family: $play-fair;
+            color: #828bb2;
+            font-weight: normal;
+            position: relative;
+        }
+        .user-star {
+            color: tomato;
+            position: absolute;
+            top: 10%;
+            left: 44%;
+        }
+    }
+    input:focus+.user-star {
+        display: none;
+    }
+}

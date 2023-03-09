@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 767px) {
+    .banner-area {
+        min-height: 260px;
+        .text-class h2 {
+            font-size: 28px;
+        }
+    }
+}

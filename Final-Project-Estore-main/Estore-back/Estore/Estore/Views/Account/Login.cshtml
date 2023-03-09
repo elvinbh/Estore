@@ -1,0 +1,55 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+     @await Component.InvokeAsync("Banner",new { Title = "Login" })
+
+    <!-- Login area starts -->
+    <section class="login-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="login-area-text text-center">
+                        <div class="login-area-text-div">
+                            <h2>New to our Shop?</h2>
+                            <p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+                            <a asp-action="Register" class="login-area-btn">Create an Account</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="login-area-login">
+                        <div class="login-area-items-div">
+                            <h3>Welcome Back ! <br> Please Sign in now</h3>
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <form class="row userlogin-form" method="post" novalidate="">
+                                <div class="col-md-12 form-group userlogin">
+                                       <input asp-for="Email" class="form-control" placeholder="Email Address">
+
+
+                                </div>
+                                <div class="col-md-12 form-group userlogin">
+                                    <input asp-for="Password" class="form-control form-control-user" placeholder="Password">
+
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <div class="form-check create-account   d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input" id="rememberlogin">
+                                        <label class="form-check-label" for="rememberlogin">Remember me</label>
+                                    </div>
+
+                                    <button type="submit" value="submit" class="login-area-btn d-block">
+        log in
+        </button>
+         </form>
+                                    <a class="forgetpassword d-block" asp-action="ForgotPassword">forget password?</a>
+                                </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Login ara ends -->

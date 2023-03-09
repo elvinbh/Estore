@@ -1,0 +1,55 @@
+            @media only screen and (min-width: 992px) and (max-width: 1600px) {
+                #main-navbar .bottom-header {
+                    padding: 0px 10px !important;
+                }
+            }
+            
+            @media only screen and (max-width: 991px) {
+                #main-navbar .bottom-header {
+                    padding: 12px 25px !important;
+                }
+            }
+            
+            @media only screen and (min-width: 987px) and (max-width: 1600px) {
+                #main-navbar .top-header {
+                    padding: 13px 10px;
+                }
+            }
+            
+            @media only screen and (min-width: 576px) and (max-width: 987px) {
+                .bottom-header .fix-card {
+                    position: absolute;
+                    top: 12px;
+                    right: 0px;
+                }
+            }
+            
+            @media only screen and (max-width: 576px) {
+                #main-navbar .bottom-header {
+                    padding: 20px 45px !important;
+                }
+                .bottom-header .fix-card {
+                    padding-left: 0px;
+                    margin-top: 10px;
+                }
+            }
+            
+            @media only screen and (min-width: 988px) and (max-width: 1200px) {
+                .bottom-header .fix-card {
+                    position: relative !important;
+                    right: -10% !important;
+                }
+            }
+            
+            @media only screen and (max-width: 982px) {
+                #main-navbar .sticky {
+                    display: none !important;
+                }
+            }
+            
+            @media only screen and (min-width: 580px) and (max-width: 982px) {
+                #main-navbar .bottom-header .bottom-header-right {
+                    position: relative;
+                    top: -22px;
+                }
+            }

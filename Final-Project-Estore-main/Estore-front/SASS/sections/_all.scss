@@ -1,0 +1,109 @@
+@import "topheader";
+@import "bottomheader";
+@import"mobilenavbar";
+@import"categoryarea";
+@import"latestproducts";
+@import"bestproductarea";
+@import"bestcollectionarea";
+@import"latestarea";
+@import"shopmethodarea";
+@import"galleryarea";
+@import"bannerarea";
+@import"productlist";
+@import"testomonial";
+@import"subscribe";
+@import"productdetails";
+@import"blogarea";
+@import"contactarea";
+@import"blogdetailsarea";
+@import"aboutarea";
+@import"shopinformationarea";
+@import"confirmationarea";
+@import"checkoutarea";
+@import"cardarea";
+@import"cardarea";
+@import"loginarea";
+.mb-85 {
+    margin-bottom: 85px;
+}
+
+.section-padding30 {
+    padding-top: 200px;
+    padding-bottom: 170px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.padding-bottom {
+    padding-bottom: 250px;
+}
+
+.single-product {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.plr-60 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.section-padding2 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    h2 {
+        font-family: $play-fair !important;
+    }
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    color: #506172;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    color: #0b1c39;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.float-start,
+.float-end {
+    &::after {
+        clear: both !important;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
